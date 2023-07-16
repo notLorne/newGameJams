@@ -1,0 +1,39 @@
+game/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── com/
+│   │   │   │   ├── yourcompany/
+│   │   │   │   │   ├── game/
+│   │   │   │   │   │   ├── Main.java            # Entry point of the game
+│   │   │   │   │   │   ├── gamestate/
+│   │   │   │   │   │   │   ├── GameState.java    # Abstract class for game states
+│   │   │   │   │   │   │   ├── MainMenuState.java  # Example game state implementation
+│   │   │   │   │   │   │   ├── GameStateManager.java  # Manages game states
+│   │   │   │   │   │   ├── entity/
+│   │   │   │   │   │   │   ├── Entity.java        # Abstract class for game entities
+│   │   │   │   │   │   │   ├── Player.java        # Example game entity implementation
+│   │   │   │   │   │   ├── graphics/
+│   │   │   │   │   │   │   ├── Renderer.java      # Handles rendering
+│   │   │   │   │   │   │   ├── Sprite.java        # Represents a sprite
+│   │   │   │   │   │   ├── input/
+│   │   │   │   │   │   │   ├── InputHandler.java  # Handles user input
+│   │   │   │   │   │   ├── util/
+│   │   │   │   │   │   │   ├── Vector2D.java      # Example utility class
+│   │   │   │   │   │   │   ├── ...
+│   ├── test/
+│   │   ├── java/
+│   │   │   ├── com/
+│   │   │   │   ├── yourcompany/
+│   │   │   │   │   ├── game/
+│   │   │   │   │   │   ├── ...
+│   ├── resources/
+│   │   ├── sprites/
+│   │   │   ├── player.png
+│   │   │   ├── ...
+│   │   ├── sounds/
+│   │   │   ├── background_music.mp3
+│   │   │   ├── ...
+├── build.gradle  # Build configuration file
+├── settings.gradle  # Project settings file
+├── README.md  # Project documentation

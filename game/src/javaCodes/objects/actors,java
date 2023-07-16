@@ -1,0 +1,68 @@
+package objects;
+
+import java.awt.Graphics2D;
+import java.awt.image.BufferedImage;
+import java.util.List;
+
+public class Actor extends GameObject {
+    private final int id;
+    private final String name;
+    private String state;
+    private final String bodyType;
+    private final String avatar;
+    private String activity;
+
+    private List<BufferedImage> animationFrames;
+    private int currentFrameIndex;
+
+    public Actor(int id, int xPos, int yPos, String name, String bodyType, String avatar, String activity) {
+        super(xPos, yPos, zOrder, layer);
+        this.id = id;
+        this.name = name;
+        this.state = state;
+        this.bodyType = bodyType;
+        this.avatar = avatar;
+        this.activity = activity;
+        this.currentFrameIndex = 0;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getBodyType() {
+        return bodyType;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public String getActivity() {
+        return activity;
+    }
+
+    public void setActivity(String activity) {
+        this.activity = activity;
+    }
+
+    @Override
+    public void render(Graphics2D g2d) {
+        // Implement rendering logic for the Actor here
+        // Draw the current animation frame based on the currentFrameIndex
+        BufferedImage currentFrame = animationFrames.get(currentFrameIndex);
+        // Draw the currentFrame using g2d.drawImage(...)
+    }
+}
